@@ -1,0 +1,140 @@
+/* Home.css */
+
+/* Global home styles */
+.home {
+  background-color: #121212;
+  color: #fff;
+  padding: 40px 20px;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Section Title with Gradient Text */
+.section-title {
+  background: linear-gradient(45deg, #ff69b4, #00bfff, #8a2be2, #ff4500);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientRotate 5s linear infinite;
+}
+
+/* Text Shadow Effect */
+.text-shadow {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Category Title */
+.category-title {
+  font-size: 1.8rem;
+  margin: 20px 0;
+  color: #ffcc00;
+}
+
+/* Subcategory Title */
+.subcategory-title {
+  font-size: 1.4rem;
+  margin: 15px 0 10px;
+  color: #ff80ff; /* Soft neon pink-purple */
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Gradient animation for rotating gradient on text */
+@keyframes gradientRotate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Product Card */
+.product-card {
+  background-color: #2a2a2a; /* Slightly lighter than the main background */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 0.5s ease forwards;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* Product Image Container with Gradient */
+.product-img-container {
+  background: linear-gradient(135deg, #ff69b4, #00bfff); /* Pink to Blue */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  padding: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Product Image - make it larger while preserving aspect ratio */
+.product-img {
+  width: 100%; /* Ensures image spans full width of container */
+  height: 100%; /* Ensures image spans full height of container */
+  object-fit: contain; /* Preserves aspect ratio */
+  border-radius: 8px;
+}
+
+/* Product Info Section */
+.product-info {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Product Info Headings */
+.product-info h3,
+.product-info h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+/* Product Description */
+.product-info p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* FadeIn Animation for Product Cards */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .product-info h3,
+  .product-info h4 {
+    font-size: 1rem;
+  }
+
+  .product-img {
+    height: 140px;
+  }
+}
