@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { FaBars, FaTimes,FaIndustry  } from 'react-icons/fa';
+import { FaBars, FaTimes, FaIndustry } from 'react-icons/fa';
 import './Navbar.css';
 
 function Navbar() {
@@ -17,10 +17,14 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="logo">
-    <FaIndustry size={30} color="#ffcc00" style={{ marginRight: '10px' }} />
-    <span>Balaji Soap Factory</span>
-  </div>
+      <div className="logo" style={{ display: 'flex', alignItems: 'center' }}>
+        <img
+          src={`${process.env.PUBLIC_URL}/BG/logo.png`}
+          alt="Balaji Soap Factory Logo"
+          style={{ height: '70px', marginRight: '10px' }}
+        />
+        <span style={{ fontWeight: 'bold', fontSize: '1.2rem' }}>Balaji Soap Factory</span>
+      </div>
       <div className="menu-icon" onClick={toggleMenu}>
         {menuOpen ? <FaTimes /> : <FaBars />}
       </div>

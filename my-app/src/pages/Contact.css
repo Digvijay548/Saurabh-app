@@ -1,0 +1,54 @@
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    min-height: 100vh;
+    padding: 2rem;
+    color: #fff;
+  }
+  
+  .contact-card {
+    background-color: #1e1e1e;
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  }
+  
+  .contact-card h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #ffcc00;
+  }
+  
+  .contact-subtitle {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .contact-icon {
+    font-size: 1.8rem;
+    color: #ffcc00;
+  }
+  
+  .info-label {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 3px;
+  }
+  
