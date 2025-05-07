@@ -80,7 +80,7 @@ function Home() {
     <img src={item.image} alt={item.name} className="product-img" />
   </div>
   <div className="product-info">
-    <h4>{item.icon} {item.name}</h4>
+    <h4  className="category-title">{item.icon} {item.name}</h4>
     <p>{item.description}</p>
   </div>
 </div>

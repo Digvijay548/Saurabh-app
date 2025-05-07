@@ -6,16 +6,20 @@
   color: #fff;
   padding: 40px 20px;
   min-height: 100vh;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;  
 }
 
 /* Section Title with Gradient Text */
 .section-title {
-  background: linear-gradient(45deg, #ff69b4, #00bfff, #8a2be2, #ff4500);
+  background: linear-gradient(55deg, #f51a88, #00bfff, #9829ff, #ff4400);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: gradientRotate 5s linear infinite;
+  animation: gradientRotate 1ms linear infinite;
+  display: flex;
+  justify-content: center;  /* Horizontally center the content */
+  align-items: center;      /* Vertically center the content */
+  padding-top: 10px;
 }
 
 /* Text Shadow Effect */
