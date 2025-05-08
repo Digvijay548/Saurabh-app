@@ -1,54 +1,89 @@
-.contact-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #121212;
-    min-height: 100vh;
-    padding: 2rem;
-    color: #fff;
-  }
-  
-  .contact-card {
-    background-color: #1e1e1e;
-    padding: 2rem 3rem;
-    border-radius: 12px;
-    max-width: 600px;
-    width: 100%;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-  }
-  
-  .contact-card h1 {
-    margin-bottom: 10px;
+.contact-page {
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-color: #121212;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.page-title {
+  background: linear-gradient(55deg, #f51a88, #00bfff, #9829ff, #ff4400);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.icon {
+  color: #00bfff;
+  font-size: 2rem;
+}
+
+.contact-description {
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  max-width: 800px;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.contact-description:hover {
+  transform: scale(1.02);
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.contact-icon {
+  font-size: 1.6rem;
+  color: #00bfff;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.info-label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #eee;
+}
+
+@media (max-width: 768px) {
+  .page-title {
     font-size: 2rem;
-    color: #ffcc00;
   }
-  
-  .contact-subtitle {
-    margin-bottom: 30px;
+
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  .contact-description {
+    padding: 20px;
     font-size: 1rem;
-    color: #ccc;
   }
-  
-  .contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  
+
   .info-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
+    flex-direction: row;
+    gap: 12px;
   }
-  
+
   .contact-icon {
-    font-size: 1.8rem;
-    color: #ffcc00;
+    font-size: 1.4rem;
   }
-  
-  .info-label {
-    font-weight: bold;
-    font-size: 1rem;
-    margin-bottom: 3px;
-  }
-  
+}

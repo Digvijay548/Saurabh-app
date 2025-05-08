@@ -78,7 +78,7 @@
 
 /* Product Image Container with Gradient */
 .product-img-container {
-  background: linear-gradient(135deg, #ff69b4, #00bfff); /* Pink to Blue */
+  background: linear-gradient(55deg, #ff0381cc, #00bfffcc, #9829ffcc, #ff4400cc);
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,0 +1,134 @@
+.admin-container {
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #121212;
+    min-height: 100vh;
+  }
+  
+  .section-title {
+    background: linear-gradient(55deg, #f51a88, #00bfff, #9829ff, #ff4400);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .admin-form {
+    display: grid;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+  }
+  
+  .admin-form input,
+  .admin-form button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .admin-form input {
+    background-color: #2a2a2a;
+    color: #fff;
+  }
+  
+  .admin-form button {
+    background-color: #00bfff;
+    color: #121212;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  
+  .admin-form button:hover {
+    background-color: #009fd9;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-card {
+    background-color: #2a2a2a;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.12);
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  .product-img-container {
+    background: linear-gradient(135deg, #ff69b4, #00bfff);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  .product-info {
+    padding: 15px;
+  }
+  
+  .product-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .action-btn {
+    background-color: #00bfff;
+    color: #121212;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 45%;
+  }
+  .admin-form select {
+    background-color: #2a2a2a;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+  
+  .action-btn:hover {
+    background-color: #009fd9;
+  }
+  
+  .edit-btn {
+    background-color: #ffaf00;
+  }
+  
+  .delete-btn {
+    background-color: #ff2f2f;
+  }
+  
+  .edit-btn:hover {
+    background-color: #e69500;
+  }
+  
+  .delete-btn:hover {
+    background-color: #e60000;
+  }
+  
