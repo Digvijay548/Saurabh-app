@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
-import { FaSoap, FaPumpSoap, FaBoxOpen } from 'react-icons/fa';
+import { FaSoap, FaPumpSoap, FaBoxOpen, FaProductHunt } from 'react-icons/fa';
 import { Client, Databases } from 'appwrite';
 import { createClient } from '@supabase/supabase-js';
 import Swal from 'sweetalert2';
@@ -126,7 +126,10 @@ function Home() {
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
     }}>
-      <h1 className="section-title">Our Products</h1>
+      <h1 className="section-title">
+        <FaBoxOpen  style={{ marginRight: '10px' }} />
+        Our Products
+      </h1>
 
       {Object.entries(productsByCategory).map(([category, subcategories]) => (
         <section key={category} className="category-section">
